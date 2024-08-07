@@ -1,7 +1,11 @@
+import {Container, Title} from "@/components/shared";
+
 export default function Home() {
   return (
-   <div>
-     <h1>Главная</h1>
-   </div>
+   <>
+    <Container className={'mt-10'}>
+        <Title text={'Все пиццы'} size={'lg'}/>
+    </Container>
+   </>
   );
 }
