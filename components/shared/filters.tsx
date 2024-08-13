@@ -1,5 +1,6 @@
 import React from 'react';
 import {Title} from "@/components/shared/title";
+import {FilterCheckbox} from "@/components/shared";
 
 interface Props {
     className?: string;
