@@ -1,21 +1,23 @@
-import React, { ButtonHTMLAttributes } from 'react';
-import { Checkbox } from '../ui/checkbox';
+import React, {ButtonHTMLAttributes} from 'react';
+import {Checkbox} from '../ui/checkbox';
 
-export interface FilterChecboxProps {
-    text: string;
-    value: string;
-    endAdornment?: React.ReactNode;
-    onCheckedChange?: (checked: boolean) => void;
-    checked?: boolean;
+export interface FilterCheckboxProps {
+    text: string,
+    value: string,
+    endAdornment?: React.ReactNode,
+    onCheckedChange?: (checked: boolean) => void,
+    checked?: boolean,
+    key?: number
 }
 
-export const FilterCheckbox: React.FC<FilterChecboxProps> = ({
-                                                                 text,
-                                                                 value,
-                                                                 endAdornment,
-                                                                 onCheckedChange,
-                                                                 checked,
-                                                             }) => {
+export const FilterCheckbox: React.FC<FilterCheckboxProps> = (
+    {
+        text,
+        value,
+        endAdornment,
+        onCheckedChange,
+        checked
+    }) => {
     return (
         <div className="flex items-center space-x-2">
             <Checkbox
